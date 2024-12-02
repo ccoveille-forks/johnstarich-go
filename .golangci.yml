@@ -15,6 +15,7 @@ linters:
     - gosec
     - ireturn
     - makezero
+    - mirror
     - misspell
     - mnd
     - nakedret
