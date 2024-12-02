@@ -14,6 +14,8 @@ import (
 const dom = "dns.local."
 
 func hostnamesHandler(ctx context.Context, t *testing.T, responseDelay time.Duration, hostnames map[string][]string) dns.HandlerFunc {
+	t.Helper()
+
 	return func(w dns.ResponseWriter, r *dns.Msg) {
 		timer := time.NewTimer(responseDelay)
 		defer timer.Stop()

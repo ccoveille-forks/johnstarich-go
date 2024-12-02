@@ -16,6 +16,8 @@ type testLogger struct {
 }
 
 func newTestLogger(t *testing.T) *zap.Logger {
+	t.Helper()
+
 	l := &testLogger{}
 	core := zaptest.NewLogger(t).Core()
 	l.core.Store(&core)

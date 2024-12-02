@@ -76,6 +76,8 @@ type testWriter struct {
 }
 
 func newTestWriter(t *testing.T) testWriter {
+	t.Helper()
+
 	return testWriter{
 		testingT: t,
 		out:      bytes.NewBuffer(nil),

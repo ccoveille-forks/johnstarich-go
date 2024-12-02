@@ -17,6 +17,8 @@ import (
 const testTimeout = 5 * time.Second
 
 func dialUDP(t *testing.T, address string) PacketConn { //nolint:ireturn // Returned interface is a convenience wrapper for tests calling New()
+	t.Helper()
+
 	conn, err := net.Dial("udp", address)
 	require.NoError(t, err)
 	require.Implements(t, (*PacketConn)(nil), conn)
@@ -160,6 +162,8 @@ func TestStagger(t *testing.T) {
 	t.Parallel()
 
 	startServers := func(t *testing.T) []string {
+		t.Helper()
+
 		const slowServerDelay = 30 * time.Second
 		var servers []string
 		addr := testhelpers.StartDNSServer(t, testhelpers.DNSConfig{

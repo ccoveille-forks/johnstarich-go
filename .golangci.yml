@@ -25,6 +25,7 @@ linters:
     - nolintlint
     - paralleltest
     - revive
+    - thelper
     - unconvert
     - unparam
 

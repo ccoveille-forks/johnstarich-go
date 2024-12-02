@@ -21,6 +21,8 @@ const testDirPermission = 0700
 // FromOSToFS returns the FS and FS path for the given OS path.
 // If using Windows, the os.FS used will target the osPath's volume (e.g. C:\) before converting.
 func FromOSToFS(t *testing.T, osPath string) (*os.FS, string) {
+	t.Helper()
+
 	fs, err := fspath.WorkingDirectoryFS()
 	require.NoError(t, err)
 	fsPath, err := fs.FromOSPath(osPath)

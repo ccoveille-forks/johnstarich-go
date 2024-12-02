@@ -23,6 +23,8 @@ import (
 var reGoVersion = regexp.MustCompile(`^go(\d+)\.(\d+)(\.(\d+))?.*$`)
 
 func skipIfNotGo19OrLater(t *testing.T) {
+	t.Helper()
+
 	matches := reGoVersion.FindStringSubmatch(runtime.Version())
 	if len(matches) > 2 {
 		major, _ := strconv.Atoi(matches[1]) // skip err check, major will be 0 on error
@@ -199,7 +201,7 @@ func Baz() {}
 //   - Std library: [os.File] [*os.File] [encoding/xml.Encoder]
 //   - Std imported: [json.Decoder] [json.Encoder]
 //   - Packages: [os] [json] [encoding/xml]
-//   - This package: [JSONFunc] 
+//   - This package: [JSONFunc]
 //   - Module Package: [github.com/my/thing/hello]
 //   - Module Package Type: [github.com/my/thing/hello.Hello]
 //   - Module Package Func: [github.com/my/thing/hello.Function]
@@ -321,6 +323,8 @@ func JSONFunc() {
 func TestGenerateDocsAvoidOverwritingExistingOutput(t *testing.T) {
 	t.Parallel()
 	generateDocs := func(t *testing.T, outputFS billy.Filesystem, outputDir string) error {
+		t.Helper()
+
 		moduleFS := memfs.New()
 		args := flags.Args{OutputPath: outputDir}
 

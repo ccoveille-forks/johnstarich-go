@@ -27,6 +27,8 @@ func Exit(code int) {
 
 // SetupTestExiter changes the exiter to panic instead of exiting
 func SetupTestExiter(t *testing.T) {
+	t.Helper()
+
 	// require testing.T to ensure this is a test and not real code
 	t.Log("Setting up exiter")
 	setupExiterOnce.Do(func() {

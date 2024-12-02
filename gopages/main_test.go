@@ -107,6 +107,8 @@ type testRunTestCase struct {
 }
 
 func testRun(t *testing.T, tc testRunTestCase) {
+	t.Helper()
+
 	if tc.skip {
 		t.Skip("Skipped by test case param")
 	}

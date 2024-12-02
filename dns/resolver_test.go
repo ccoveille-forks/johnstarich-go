@@ -106,6 +106,8 @@ func TestEnsureNameservers(t *testing.T) {
 }
 
 func testDialer(t *testing.T) *macOSDialer {
+	t.Helper()
+
 	return newMacOSDialer(Config{Logger: newTestLogger(t)})
 }
 
