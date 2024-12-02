@@ -61,3 +61,6 @@ linters-settings:
       # Also allow these common interfaces:
       - github\.com\/go-git\/go-billy\/v5
       - golang\.org\/x\/tools\/godoc\/vfs
+
+  misspell:
+    locale: "US" # Fix the colour => color, and co
