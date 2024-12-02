@@ -46,7 +46,7 @@ func Parse(osArgs ...string) (Args, string, error) {
 
 // Linker returns an appropriate source.Linker for the given command line args
 //
-//nolint:ireturn // This method's purpose is to determine the correct implementation of source.Linker to return
+//nolint:ireturn // This validates the correct implementation of source.Linker to return
 func (a Args) Linker(modulePackage string) (source.Linker, error) {
 	if a.SourceLinkTemplate != "" {
 		return newTemplateLinker(modulePackage, a.SourceLinkTemplate)
