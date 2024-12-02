@@ -8,9 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/johnstarich/go/dns/testhelpers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/johnstarich/go/dns/testhelpers"
 )
 
 const testTimeout = 5 * time.Second

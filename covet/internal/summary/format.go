@@ -6,6 +6,7 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/jedib0t/go-pretty/v6/table"
+
 	"github.com/johnstarich/go/covet/internal/coverstatus"
 	"github.com/johnstarich/go/covet/internal/minmax"
 )

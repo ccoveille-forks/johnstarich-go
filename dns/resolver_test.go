@@ -7,12 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/johnstarich/go/dns/scutil"
-	"github.com/johnstarich/go/dns/staggercast"
-	"github.com/johnstarich/go/dns/testhelpers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
+
+	"github.com/johnstarich/go/dns/scutil"
+	"github.com/johnstarich/go/dns/staggercast"
+	"github.com/johnstarich/go/dns/testhelpers"
 )
 
 const testTimeout = 5 * time.Second

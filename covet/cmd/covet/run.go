@@ -14,12 +14,13 @@ import (
 
 	"github.com/hack-pad/hackpadfs"
 	"github.com/hack-pad/hackpadfs/os"
+	"github.com/pkg/errors"
+
 	"github.com/johnstarich/go/covet"
 	"github.com/johnstarich/go/covet/internal/coverstatus"
 	"github.com/johnstarich/go/covet/internal/fspath"
 	"github.com/johnstarich/go/covet/internal/span"
 	"github.com/johnstarich/go/covet/internal/summary"
-	"github.com/pkg/errors"
 )
 
 const maxPercentInt = 100

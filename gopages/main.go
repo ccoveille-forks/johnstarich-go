@@ -19,13 +19,14 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/object"
 	gitHTTP "github.com/go-git/go-git/v5/plumbing/transport/http"
 	"github.com/go-git/go-git/v5/storage/memory"
+	"github.com/johnstarich/go/pipe"
+	"github.com/pkg/errors"
+
 	"github.com/johnstarich/go/gopages/cmd"
 	"github.com/johnstarich/go/gopages/internal/flags"
 	"github.com/johnstarich/go/gopages/internal/generate"
 	"github.com/johnstarich/go/gopages/internal/generate/source"
 	"github.com/johnstarich/go/gopages/internal/module"
-	"github.com/johnstarich/go/pipe"
-	"github.com/pkg/errors"
 )
 
 const (

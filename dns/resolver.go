@@ -12,9 +12,10 @@ import (
 	"sync"
 	"time"
 
+	"go.uber.org/zap"
+
 	"github.com/johnstarich/go/dns/scutil"
 	"github.com/johnstarich/go/dns/staggercast"
-	"go.uber.org/zap"
 )
 
 // Config contains options for configuring a DNS resolver.

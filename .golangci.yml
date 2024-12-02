@@ -6,6 +6,7 @@ linters:
     - errname
     - errorlint
     - exhaustive
+    - gci
     - gochecknoglobals
     - gochecknoinits
     - gocognit
@@ -61,6 +62,16 @@ linters-settings:
       # Also allow these common interfaces:
       - github\.com\/go-git\/go-billy\/v5
       - golang\.org\/x\/tools\/godoc\/vfs
+
+  # define the import orders
+  gci:
+    sections:
+      # Standard section: captures all standard packages.
+      - standard
+      # Default section: catchall that is not standard or custom
+      - default
+      # linters that related to local tool, so they should be separated
+      - localmodule
 
   misspell:
     locale: "US" # Fix the colour => color, and co

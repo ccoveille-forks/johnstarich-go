@@ -11,11 +11,12 @@ import (
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/object"
 	gitHTTP "github.com/go-git/go-git/v5/plumbing/transport/http"
-	"github.com/johnstarich/go/gopages/cmd"
-	"github.com/johnstarich/go/gopages/internal/flags"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/johnstarich/go/gopages/cmd"
+	"github.com/johnstarich/go/gopages/internal/flags"
 )
 
 func TestMain(t *testing.T) {

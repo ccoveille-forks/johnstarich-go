@@ -6,8 +6,9 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/johnstarich/go/dns"
 	"go.uber.org/zap"
+
+	"github.com/johnstarich/go/dns"
 )
 
 func main() {

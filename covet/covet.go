@@ -13,11 +13,12 @@ import (
 	"github.com/bluekeyes/go-gitdiff/gitdiff"
 	"github.com/fatih/color"
 	"github.com/hack-pad/hackpadfs"
+	"github.com/pkg/errors"
+	"golang.org/x/tools/cover"
+
 	"github.com/johnstarich/go/covet/internal/fspath"
 	"github.com/johnstarich/go/covet/internal/packages"
 	"github.com/johnstarich/go/covet/internal/span"
-	"github.com/pkg/errors"
-	"golang.org/x/tools/cover"
 )
 
 // Covet generates reports for a diff and coverage combination

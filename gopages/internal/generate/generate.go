@@ -16,9 +16,6 @@ import (
 
 	"github.com/go-git/go-billy/v5"
 	"github.com/go-git/go-billy/v5/util"
-	"github.com/johnstarich/go/gopages/internal/flags"
-	"github.com/johnstarich/go/gopages/internal/generate/source"
-	"github.com/johnstarich/go/gopages/internal/safememfs"
 	"github.com/johnstarich/go/pipe"
 	"github.com/pkg/errors"
 	"golang.org/x/tools/go/packages"
@@ -26,6 +23,10 @@ import (
 	"golang.org/x/tools/godoc/static"
 	"golang.org/x/tools/godoc/vfs"
 	"golang.org/x/tools/godoc/vfs/mapfs"
+
+	"github.com/johnstarich/go/gopages/internal/flags"
+	"github.com/johnstarich/go/gopages/internal/generate/source"
+	"github.com/johnstarich/go/gopages/internal/safememfs"
 )
 
 const (

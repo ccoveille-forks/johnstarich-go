@@ -11,9 +11,10 @@ import (
 	"strings"
 	"text/template"
 
+	"github.com/pkg/errors"
+
 	"github.com/johnstarich/go/gopages/cmd"
 	"github.com/johnstarich/go/gopages/internal/flags"
-	"github.com/pkg/errors"
 )
 
 func main() {

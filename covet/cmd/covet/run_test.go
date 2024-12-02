@@ -11,12 +11,13 @@ import (
 	"text/template"
 
 	"github.com/hack-pad/hackpadfs/mem"
-	"github.com/johnstarich/go/covet"
-	"github.com/johnstarich/go/covet/internal/span"
-	"github.com/johnstarich/go/covet/internal/testhelpers"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/johnstarich/go/covet"
+	"github.com/johnstarich/go/covet/internal/span"
+	"github.com/johnstarich/go/covet/internal/testhelpers"
 )
 
 func TestRun(t *testing.T) {

@@ -8,6 +8,7 @@ import (
 	"sync"
 
 	"github.com/fatih/color"
+
 	"github.com/johnstarich/go/covet/internal/fspath"
 )
 

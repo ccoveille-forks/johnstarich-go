@@ -7,9 +7,10 @@ import (
 	"testing"
 
 	"github.com/hack-pad/hackpadfs"
-	"github.com/johnstarich/go/covet/internal/testhelpers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	"github.com/johnstarich/go/covet/internal/testhelpers"
 )
 
 func TestReportSummaryMarkdown(t *testing.T) {

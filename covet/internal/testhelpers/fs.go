@@ -11,8 +11,9 @@ import (
 	"github.com/hack-pad/hackpadfs/mem"
 	"github.com/hack-pad/hackpadfs/mount"
 	"github.com/hack-pad/hackpadfs/os"
-	"github.com/johnstarich/go/covet/internal/fspath"
 	"github.com/stretchr/testify/require"
+
+	"github.com/johnstarich/go/covet/internal/fspath"
 )
 
 const testDirPermission = 0700

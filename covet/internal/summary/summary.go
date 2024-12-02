@@ -7,6 +7,7 @@ import (
 
 	"github.com/jedib0t/go-pretty/v6/table"
 	"github.com/jedib0t/go-pretty/v6/text"
+
 	"github.com/johnstarich/go/covet/internal/coverfile"
 	"github.com/johnstarich/go/covet/internal/coverstatus"
 )
