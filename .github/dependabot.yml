@@ -1,0 +1,30 @@
+---
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  # These would open PR, these PR would be tested with the CI
+  # They will have to be merged manually by a maintainer
+  - package-ecosystem: github-actions
+    directory: /
+    open-pull-requests-limit: 10  # avoid spam, if no one reacts
+    schedule:
+      interval: weekly
+      time: '11:00'
+    groups:
+      all:
+        patterns:
+          - "*"  # Group all updates into a single larger pull request.
+
+  # Maintain dependencies for Go modules
+  # These would open PR, these PR would be tested with the CI
+  # They will have to be merged manually by a maintainer
+  - package-ecosystem: gomod
+    directory: /
+    open-pull-requests-limit: 10  # avoid spam, if no one reacts
+    schedule:
+      interval: weekly
+      time: '11:00'
+    groups:
+      all:
+        patterns:
+          - "*"  # Group all updates into a single larger pull request.
