@@ -6,7 +6,6 @@ linters:
     - errname
     - errorlint
     - exhaustive
-    - exportloopref  # After minimum Go version hits 1.22, replace this with 'copyloopvar'
     - gochecknoglobals
     - gochecknoinits
     - gocognit
